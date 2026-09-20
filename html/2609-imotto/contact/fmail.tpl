@@ -33,6 +33,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" media="all" href="../css/responsive.css">
 <link rel="stylesheet" media="all" href="../css/under.css">
 <link rel="stylesheet" media="all" href="../css/under_responsive.css">
+<link rel="stylesheet" media="all" href="../css/type1-mid.css">
 <script src="../js/jquery.js"></script>
 
 <!-- [ Fmail Include Files ] -->
@@ -89,7 +90,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 
-<body id="contact" class="under contact_page">
+<body id="contact" class="under contact_page type1-mid">
      <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMZTJCWM"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -216,9 +217,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <main>
             <!-- content start -->
             <div id="content">
-                <div id="top_info">
+                                <div id="top_info">
                     <div class="inner">
-                        <h2>お問い合わせ・査定依頼</h2>
+                        <p class="sg-hero-badge">CONTACT / お問い合わせ</p>
+                        <h2>お問い合わせ・<span class="sg-em">査定依頼</span></h2>
+                        <p class="sg-hero-lead">相模原市・厚木市の不動産売却・相続・購入のご相談。<br class="pc">かんたんお問い合わせからお気軽にどうぞ。</p>
+                        <span class="sg-hero-watermark" aria-hidden="true">Contact</span>
                     </div>
                 </div>
                 

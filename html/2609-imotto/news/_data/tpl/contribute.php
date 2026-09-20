@@ -127,6 +127,7 @@ $current_category_name = $category_name;
 <link rel="stylesheet" media="all" href="../../css/responsive.css">
 <link rel="stylesheet" media="all" href="../../css/under.css">
 <link rel="stylesheet" media="all" href="../../css/under_responsive.css">
+<link rel="stylesheet" media="all" href="../../css/type1-mid.css">
 <script src="../../js/jquery.js"></script>
 
 <!-- OGP Social Share - Facebook -->
@@ -184,7 +185,7 @@ $current_category_name = $category_name;
 </script>
 </head>
 
-<body id="ovn_detail" class="under ovn_page">
+<body id="ovn_detail" class="under ovn_page type1-mid">
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMZTJCWM"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -318,7 +319,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div id="content">
                 <div id="top_info">
                     <div class="inner">
-                        <h2><?php echo $current_category_name; ?></h2>
+                        <p class="sg-hero-badge">NEWS / 記事</p>
+<h2><?php echo $current_category_name; ?></h2>
+<p class="sg-hero-lead">相模原市・厚木市の不動産に関する情報をお届けします。</p>
+<span class="sg-hero-watermark" aria-hidden="true">News</span>
                     </div>
                 </div>
                 <div id="topic_path">

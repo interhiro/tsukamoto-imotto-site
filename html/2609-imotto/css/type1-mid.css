@@ -1,0 +1,530 @@
+/*==========================================================
+  sell/guide — ①通常中ページ（デザイン寄せ・.type1-mid 限定）
+  TOP ヤマブキ: --mcolor #ffd100 / アクセント赤・緑 OK（中野指示）
+==========================================================*/
+.type1-mid {
+  --sg-yamabuki: #ffd100; /* TOP相当ヤマブキ（デザインPNG優先） */
+  --sg-yamabuki-soft: #fff8d6;
+  --sg-border: #f0d45a;
+  --sg-red: #e60012;
+  --sg-green: #2bac38;
+  --sg-em: #e60012; /* デザインの強調は赤系 */
+  --sg-cream: #fff9e6;
+  --sg-card-radius: 18px;
+}
+
+/* 既存 under の斜線BGよりデザイン余白を優先 */
+.type1-mid.under main .u_content::before {
+  background: var(--sg-cream);
+  opacity: 1;
+}
+
+/* ---- Hero ---- */
+.type1-mid.under main #top_info {
+  height: auto;
+  min-height: 340px;
+  background: var(--sg-yamabuki);
+  overflow: hidden;
+}
+.type1-mid.under main #top_info::before {
+  opacity: 0.92;
+  z-index: 1;
+}
+.type1-mid.under main #top_info .inner {
+  position: relative;
+  z-index: 2;
+  padding: 56px 15px 64px;
+  align-items: flex-start;
+  max-width: var(--site_size);
+}
+.type1-mid.under main #top_info .sg-hero-badge {
+  display: inline-block;
+  background: #fff;
+  color: #5a4a20;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  border-radius: 999px;
+  padding: 8px 22px;
+  margin-bottom: 22px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.04);
+}
+.type1-mid.under main #top_info h2 {
+  font-size: clamp(32px, 4.2vw, 52px);
+  line-height: 1.35;
+  text-align: left;
+  letter-spacing: -0.02em;
+  max-width: 18em;
+  position: relative;
+}
+.type1-mid.under main #top_info h2 .sg-em {
+  color: var(--sg-em);
+  font-style: normal;
+}
+.type1-mid.under main #top_info .sg-hero-lead {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  max-width: 28em;
+}
+.type1-mid.under main #top_info .sg-hero-watermark {
+  position: absolute;
+  right: 8%;
+  bottom: 8%;
+  font-family: var(--font-en);
+  font-size: clamp(72px, 12vw, 140px);
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.35);
+  line-height: 1;
+  pointer-events: none;
+  z-index: 0;
+  letter-spacing: -0.04em;
+}
+
+/* ---- Section pill titles (h3) ---- */
+.type1-mid.under main h3 .txt {
+  background: var(--sg-yamabuki);
+  border-radius: 999px;
+  padding: 12px 48px 14px;
+  font-size: 0.78em;
+  line-height: 1.35;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.06);
+}
+.type1-mid.under main h3 .txt::before,
+.type1-mid.under main h3 .txt::after {
+  display: none;
+}
+.type1-mid.under main h3 .txt::first-letter {
+  color: inherit;
+}
+
+/* ---- h4: yamabuki closer to TOP (was orange --scolor) ---- */
+.type1-mid.under main h4 {
+  background: var(--sg-yamabuki);
+  color: var(--txt);
+  border-radius: 999px;
+  padding: 14px 28px 16px;
+  font-size: 28px;
+}
+.type1-mid.under main h4::first-letter {
+  color: inherit;
+}
+
+/* ---- Concerns ---- */
+.type1-mid .sg-concerns {
+  margin: 0 0 80px;
+  padding: 48px 28px 40px;
+  background: #fff;
+  border: 3px solid var(--sg-yamabuki);
+  border-radius: 24px;
+}
+.type1-mid .sg-concerns > .sg-sec-ttl {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 28px;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.type1-mid .sg-concerns > .sg-sec-ttl::after {
+  content: "";
+  display: block;
+  height: 6px;
+  margin-top: 10px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--sg-yamabuki) 0 12px,
+    transparent 12px 20px
+  );
+  border-radius: 3px;
+}
+.type1-mid .sg-concern-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin: 0 0 28px;
+}
+.type1-mid .sg-concern-card {
+  background: #fff;
+  border: 2px solid var(--sg-border);
+  border-radius: var(--sg-card-radius);
+  padding: 22px 14px 20px;
+  text-align: center;
+  min-height: 100%;
+}
+.type1-mid .sg-concern-card .sg-ico {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: var(--sg-yamabuki);
+  color: #5a4a20;
+  font-weight: 900;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.type1-mid .sg-concern-card p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.45;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+.type1-mid .sg-concern-banner {
+  display: block;
+  text-align: center;
+  background: var(--sg-red);
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: 999px;
+  padding: 16px 24px;
+  margin: 0;
+}
+
+/* ---- Diagnosis (仲介 / 買取) ---- */
+.type1-mid .sg-diagnosis {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 0 0 100px;
+}
+.type1-mid .sg-diag-card {
+  border-radius: 22px;
+  padding: 28px 24px 32px;
+  border: 3px solid transparent;
+  background: #fff;
+}
+.type1-mid .sg-diag-card.is-high {
+  border-color: var(--sg-green);
+  background: linear-gradient(180deg, #f3fbf4 0%, #fff 40%);
+}
+.type1-mid .sg-diag-card.is-fast {
+  border-color: var(--sg-yamabuki);
+  background: linear-gradient(180deg, var(--sg-yamabuki-soft) 0%, #fff 40%);
+}
+.type1-mid .sg-diag-card .sg-diag-label {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  border-radius: 999px;
+  padding: 6px 16px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+.type1-mid .sg-diag-card.is-high .sg-diag-label {
+  background: var(--sg-green);
+}
+.type1-mid .sg-diag-card.is-fast .sg-diag-label {
+  background: var(--organ);
+}
+.type1-mid .sg-diag-card h4 {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  text-align: left;
+  font-size: 28px;
+  color: var(--txt);
+}
+.type1-mid .sg-diag-card.is-high h4 {
+  color: var(--sg-green);
+}
+.type1-mid .sg-diag-card.is-fast h4 {
+  color: var(--organ);
+}
+.type1-mid .sg-diag-card h4::first-letter {
+  color: inherit;
+}
+.type1-mid .sg-diag-card p {
+  font-size: 16px;
+  line-height: 1.75;
+}
+.type1-mid .sg-diag-merit {
+  margin-top: 18px;
+  border-radius: 14px;
+  padding: 14px 16px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.type1-mid .sg-diag-card.is-high .sg-diag-merit {
+  background: #e6f6e8;
+  color: #1f6b28;
+}
+.type1-mid .sg-diag-card.is-fast .sg-diag-merit {
+  background: #ffe8c8;
+  color: #9a4a00;
+}
+.type1-mid .sg-diag-card .btn {
+  margin-top: 20px;
+}
+.type1-mid .sg-diag-card.is-high .btn a {
+  background-color: var(--sg-green);
+  background-image: url("../images/ic-right.png");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
+  background-size: 39px;
+}
+.type1-mid .sg-diag-card.is-fast .btn a {
+  background-color: var(--organ);
+}
+
+/* ---- Steps timeline ---- */
+.type1-mid.under main .list_step {
+  position: relative;
+  padding-left: 56px;
+}
+.type1-mid.under main .list_step::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 12px;
+  bottom: 12px;
+  width: 0;
+  border-left: 3px dashed var(--sg-yamabuki);
+}
+.type1-mid.under main .list_step dl {
+  position: relative;
+  padding-bottom: 36px;
+  margin-bottom: 0;
+}
+.type1-mid.under main .list_step dl:not(:last-child)::before {
+  display: none;
+}
+.type1-mid.under main .list_step dl::after {
+  content: "";
+  position: absolute;
+  left: -56px;
+  top: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--sg-yamabuki);
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px var(--sg-border);
+  z-index: 1;
+}
+.type1-mid.under main .list_step dt {
+  background: var(--sg-yamabuki);
+  color: var(--txt);
+  border-radius: 12px 12px 0 0;
+  font-size: 20px;
+  padding: 12px 18px;
+}
+.type1-mid.under main .list_step dd {
+  border: 2px solid var(--sg-border);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  background: #fff;
+}
+
+/* ---- Cost cards ---- */
+.type1-mid .sg-cost-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 0 0 40px;
+}
+.type1-mid .sg-cost-card {
+  border: 2px solid var(--sg-border);
+  border-radius: var(--sg-card-radius);
+  padding: 28px 20px 24px;
+  text-align: center;
+  background: #fff;
+}
+.type1-mid .sg-cost-card .sg-ico {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: var(--sg-yamabuki-soft);
+  border: 2px solid var(--sg-yamabuki);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 900;
+  color: #8a6a00;
+}
+.type1-mid .sg-cost-card h5 {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0 0 10px;
+  color: var(--txt);
+  border: none;
+  padding: 0;
+}
+.type1-mid .sg-cost-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  color: #444;
+}
+
+/* ---- Success points ---- */
+.type1-mid .sg-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 0 0 60px;
+}
+.type1-mid .sg-point {
+  border-radius: 16px;
+  background: var(--sg-cream);
+  border: 2px solid var(--sg-yamabuki);
+  padding: 22px 18px 24px;
+}
+.type1-mid .sg-point .sg-point-num {
+  display: inline-block;
+  font-family: var(--font-en);
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  background: var(--sg-yamabuki);
+  border-radius: 999px;
+  padding: 4px 12px;
+  margin-bottom: 10px;
+}
+.type1-mid .sg-point h5 {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0 0 10px;
+  color: var(--txt);
+  border: none;
+  padding: 0;
+}
+.type1-mid .sg-point p {
+  font-size: 14px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ---- Mid CTA strip ---- */
+.type1-mid .sg-mid-cta {
+  margin: 20px 0 100px;
+  padding: 36px 28px;
+  background: var(--sg-yamabuki);
+  border-radius: 20px;
+  text-align: center;
+}
+.type1-mid .sg-mid-cta p.sg-mid-ttl {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.45;
+  margin: 0 0 20px;
+}
+.type1-mid .sg-mid-cta .sg-mid-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+.type1-mid .sg-mid-cta .sg-mid-btns a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 260px;
+  height: 56px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+}
+.type1-mid .sg-mid-cta .sg-mid-btns a.is-primary {
+  background: var(--sg-red);
+  color: #fff;
+  border: 3px solid #000;
+}
+.type1-mid .sg-mid-cta .sg-mid-btns a.is-tel {
+  background: #fff;
+  color: var(--sg-red);
+  border: 3px solid var(--sg-red);
+}
+
+/* ---- Tables: yamabuki headers on this page ---- */
+.type1-mid.under main table th {
+  background: var(--sg-yamabuki);
+  color: var(--txt);
+}
+.type1-mid.under main table td {
+  border-color: var(--sg-border);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1100px) {
+  .type1-mid .sg-concern-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .type1-mid .sg-cost-grid,
+  .type1-mid .sg-points {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .type1-mid.under main #top_info {
+    min-height: 0;
+  }
+  .type1-mid.under main #top_info .inner {
+    padding: 36px 15px 44px;
+  }
+  .type1-mid.under main #top_info::before {
+    width: 120px;
+    opacity: 0.7;
+  }
+  .type1-mid.under main #top_info .sg-hero-watermark {
+    display: none;
+  }
+  .type1-mid.under main #top_info h2 {
+    font-size: 7vw;
+  }
+  .type1-mid.under main #top_info .sg-hero-lead {
+    font-size: 15px;
+  }
+  .type1-mid .sg-concern-grid,
+  .type1-mid .sg-diagnosis {
+    grid-template-columns: 1fr;
+  }
+  .type1-mid .sg-concerns {
+    padding: 28px 16px 24px;
+    margin-bottom: 48px;
+  }
+  .type1-mid .sg-concerns > .sg-sec-ttl {
+    font-size: 22px;
+  }
+  .type1-mid .sg-concern-banner {
+    font-size: 15px;
+    border-radius: 16px;
+  }
+  .type1-mid.under main h3 .txt {
+    padding: 10px 22px 12px;
+    font-size: 0.85em;
+  }
+  .type1-mid.under main h4 {
+    font-size: 18px;
+    padding: 12px 16px;
+  }
+  .type1-mid.under main .list_step {
+    padding-left: 40px;
+  }
+  .type1-mid.under main .list_step dl::after {
+    left: -40px;
+    width: 28px;
+    height: 28px;
+  }
+  .type1-mid .sg-mid-cta p.sg-mid-ttl {
+    font-size: 18px;
+  }
+  .type1-mid .sg-mid-cta .sg-mid-btns a {
+    min-width: 100%;
+    font-size: 16px;
+  }
+}

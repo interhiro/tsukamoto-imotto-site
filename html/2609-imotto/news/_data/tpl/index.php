@@ -45,6 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" media="all" href="../css/responsive.css">
 <link rel="stylesheet" media="all" href="../css/under.css">
 <link rel="stylesheet" media="all" href="../css/under_responsive.css">
+<link rel="stylesheet" media="all" href="../css/type1-mid.css">
 <script src="../js/jquery.js"></script>
 
 <!-- Social Share - Facebook -->
@@ -80,7 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 </head>
 
-<body id="news" class="under ovn_page">
+<body id="news" class="under ovn_page type1-mid">
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMZTJCWM"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -209,7 +210,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div id="content">
 			<div id="top_info">
 				<div class="inner">
-					<h2><?php echo $base_title; ?></h2>
+					<p class="sg-hero-badge">NEWS / 新着情報</p>
+<h2><?php echo $base_title; ?></h2>
+<p class="sg-hero-lead">相模原市・厚木市の不動産に関するお知らせをご案内します。</p>
+<span class="sg-hero-watermark" aria-hidden="true">News</span>
 				</div>
 			</div>
 			<div id="topic_path">
