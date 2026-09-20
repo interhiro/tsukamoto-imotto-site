@@ -1,0 +1,94 @@
+﻿table.mailform tr th {
+    text-align: left;
+    width: 30%;
+}
+
+table.mailform tr td {
+    word-break: break-all;
+}
+
+td.fmail_error_line,
+.fmail_error {
+    background-color: #FFEEEE !important;
+    color: #FF0000;
+}
+
+table.mailform {
+    margin-bottom: 25px;
+}
+
+.under table.ui-datepicker-calendar th,
+.under table.ui-datepicker-calendar td {
+    padding: 1px !important;
+    text-align: center
+}
+
+.under table tr.fmail_hidden td {
+    background: #fff;
+    padding: 30px 0 10px;
+    border: none !important;
+}
+
+.under table tr.fmail_hidden td p {
+    font-weight: bold;
+}
+
+.under table tr.fmail_hidden:first-child td {
+  padding: 0;
+}
+
+.fmail_hidden th,
+.fmail_hidden td:nth-of-type(1) {
+    display: none !important;
+}
+
+@media screen and (max-width: 750px) {
+
+    table.mailform tr th,
+    table.mailform tr td {
+        width: 100% !important;
+        display: block !important;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    table.mailform tr td {
+        padding: 10px 16px;
+    }
+
+    table.mailform tr th {
+        /* border-bottom: #e3e3e3 1px solid;*/
+        text-align: left !important;
+        border: none;
+    }
+
+    #d_en1245934419 select,
+    #d_en1242149556 select {
+        width: calc(33.333% - 3px);
+        margin-right: 3px;
+    }
+
+    #fmail table.mailform tr td#d_en1398753491 input {
+        width: calc(100% - 30px) !important
+    }
+
+    #fmail table.mailform tr td#d_en1248700237 select {
+        width: 100%
+    }
+
+    #fmail table.mailform tr td#d_en1241805126 ol,
+    #fmail table.mailform tr td#d_en1550219748 ol,
+    #fmail table.mailform tr td#d_en1550219852 ol {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+
+    #fmail table.mailform tr td#d_en1241805126 ol li,
+    #fmail table.mailform tr td#d_en1550219748 ol li,
+    #fmail table.mailform tr td#d_en1550219852 ol li {
+        width: 100% !important;
+        box-sizing: border-box
+    }
+}

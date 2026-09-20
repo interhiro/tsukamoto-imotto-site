@@ -1,0 +1,216 @@
+@media screen and (min-width: 751px) {
+.lightbox,
+.lightboxOverlay{min-width: var(--site_size);}
+
+/* HOVER */
+.under main #topic_path li a:hover{text-decoration:underline;text-underline-offset: 2px;}
+.under main a[data-lightbox]:hover,
+.under main .bnn a:hover{opacity: 0.7;}
+
+.under main .ovn_content p a:not([target=_blank]):hover,
+.under main .link:not([target=_blank]):hover{color: var(--scolor);}
+.under main .box_list_ovn .item:hover{opacity: 0.8}
+
+.under main .list_toc a:hover{text-decoration: none}
+
+.under main .list_anchor.col2 .btn a{width: 550px}
+.under main .list_anchor.col2_2 .btn a{width: 500px}
+
+.under main .u_item{display: flex;justify-content:space-between;align-items: center}
+.under main .u_item5 .info{width: calc(100% - 678px);}
+.under main .row-reverse{flex-direction: row-reverse;}
+
+.under main .u_item5 .info{width: calc(100% - 678px);}
+
+.under main .u_item6 .image_l{margin: 6px 50px 0 0;}
+.under main .u_item6 .image_r{margin: 6px 0 0 50px;}
+.under main .u_item6 .info{width: calc(100% - 400px);}
+.under main .box_item1 .ct_box_item{padding: 24px 30px 30px 50px;}
+.under main .box_item2 .ct_box_item{padding: 24px 50px 30px 30px;}
+
+/* BUTTON OVN DETAIL */
+.under main .btn_list {display: flex;justify-content: center;position: relative;}
+.under main .btn_list .is_prev {position: absolute;top: 0;left: 50px;}
+.under main .btn_list .is_next {position: absolute;top: 0;right: 50px;}
+
+.under main .box_list_ovn .item:nth-child(3n + 3) {margin-right: 0;}
+
+.under main .max-w400{width: 100%;max-width: 400px}
+.under main .max-w450{width: 100%;max-width: 450px}
+.under main .max-w500{width: 100%;max-width: 500px}
+.under main .max-w600{width: 100%;max-width: 600px}
+.under main .max-w700{width: 100%;max-width: 700px}
+
+.under main .btn_list a:hover{background-color: var(--scolor);}
+
+.under main .list_faq dt:hover{opacity: 0.7}
+.under main .list_faq dl dt:hover .ic_plus::after{transform: rotate(0deg);}
+
+
+}
+@media screen and (min-width: 751px) and (max-width: 1600px){
+    .under main h2{font-size: 70px;line-height: 1.2em;}
+    .under main h3, .under main .ovn_content h3{font-size: 48px}
+    .under main h4, .under main .ovn_content h4{font-size: 44px}
+    .under main #top_info{height: 320px}
+    .under main #top_info::before{width: 250px}
+}
+@media screen and (max-width: 750px) {
+.under main #content{padding:0 0 80px}
+.under main section{padding:0 0 60px;}
+.under main .u_content{padding: 0px 0 40px;margin-bottom: 60px;}
+.under main .u_content2{padding: 40px 0}
+.under main .image_r,
+.under main .image_l{float:none;display:inline-block;width:100%;text-align:center;margin:0 auto 30px !important}
+.under main .list_anchor_tag3{margin: 30px 0 0 0}
+.under main .btn_list .is_prev a{background-position: center left 10px;background-size: 25px auto}
+/*==========================================================
+                 C U S T O M
+==========================================================*/
+/*  TOP INFO  */
+.under main #top_info{height:240px}
+.under main #topic_path{margin-bottom:15px}
+.under main #topic_path li,
+.under main #topic_path li a{font-size: 16px;}
+.under main #top_info::before{width: 150px;right: 25px;}
+/*============ HEAD TITLE ============ */
+.under main h2{font-size:30px;}
+.under main h3,
+.under main .ovn_content h3{font-size:25px}
+.under main h3 .txt, .under main .ovn_content h3 .txt{padding: 0 30px}
+.under main h3 .txt::before, .under main h3 .txt::after, .under main .ovn_content h3 .txt::before, .under main .ovn_content h3 .txt::after{width: 15px;}
+.under main .txt-tag3{margin-bottom: 30px}
+
+.under main h4,
+.under main .ovn_content h4{font-size:22px;margin-bottom: 30px;padding: 15px 10px;border-radius: 10px;letter-spacing: 0.05em;}
+.under main .question{font-size: 22px}
+.under main h5,
+.under main .ovn_content h5{font-size:20px;padding-bottom: 10px}
+.under main h6,
+.under main .ovn_content h6{font-size:18px;padding-left: 30px;}
+.under main h6::before, .under main .ovn_content h6::before{width: 22px;top: 2px;}
+
+
+/*============ TABLE ============ */
+.under main table{margin-bottom:30px}
+.under main table td,
+.under main table th{padding:10px}
+.under main table th,.under main table.mailform th{font-size: 18px}
+.under main table.tb_block tr{display:flex;flex-direction:column}
+.under main table.tb_block tr:not(:last-child) th{border-bottom:none}
+.under main table.tb_block td + td{border-top: none;}
+.under main table.tb_block th,
+.under main table.tb_block td{width: 100%;}
+.under main table.tb_block tr:last-child th{border-bottom: none}
+.under main table.tb_block tr:last-child td{border-top: none}
+
+/* TABLE SCROLL */
+.under main .tb_scroll{overflow:scroll;}
+.under main .tb_scroll:not(:last-child){margin-bottom: 30px;}
+.under main .tb_scroll table{width: 800px;}
+.under main .tb_note{margin-bottom: 10px;color: #999;}
+
+/*============ LIST ============ */
+.under main .list01,
+.under main .ovn_content ul{}
+.under main .list01 li,
+.under main .ovn_content ul li{padding-left: 25px;}
+.under main .list01 li::before,
+.under main .ovn_content ul li::before{top: 4px;}
+
+.under main .list02 li, .under main .ovn_content ol li{padding-left: 30px}
+.under main .list02 li::before, .under main .ovn_content ol li::before{width: 22px;height: 22px;top: 2px;}
+
+.under main .list_check{}
+.under main .list_check li{}
+.under main .list_check li::before{top: 4px;width: 7px;height: 15px;}
+
+.under main .toc_content .ttl{font-size: 20px;margin-bottom: 20px}
+
+/* LIST FAQ */
+.under main .list_faq dl{margin-bottom: 30px}
+.under main .list_faq dt .txt{top:3px;}
+.under main .list_faq dt{font-size: 20px;padding-right: 40px;}
+.under main .list_faq dd .txt{font-size: 18px}
+.ic_plus{right: 30px;}
+.ic_plus::before, .ic_plus::after{width: 16px;}
+
+
+/* List STEP */
+.under main .list_step dl{margin-bottom: 20px;padding-bottom: 40px}
+.under main .list_step dt{font-size: 20px}
+.under main .list_step dl:not(:last-child)::before{width: 50px;left: calc(50% - 25px);bottom: 0}
+
+
+/*============ FRAME ============ */
+.under main .frame01{padding:30px 15px}
+
+
+/* ============ ORTHER ============ */
+.under main .box_map{height:250px}
+
+.under main .list_item{max-width: 410px;margin: 0 auto}
+.under main .list_item .item{width: 100%;margin-bottom: 25px}
+.under main .list_item .item:last-child{margin-bottom: 0}
+.under main .list_item .item h5{font-size: 20px;}
+.under main .list_item .item .info{padding: 0 20px 30px 20px;}
+.under main .list_item .item .desc, .under main .u_item6 .desc{font-size: 15px}
+
+
+.under main .u_box_6{padding: 40px 0}
+.under main .box_item .ct_box_item{border-width: 3px}
+
+/* ===========  OVERNOTE ===========  */
+.under main .box_list_ovn{width: 100%;left: 0;margin: 30px 0 0 0;}
+.under main .box_list_ovn .item{width: calc((100% - 15px) / 2);margin: 0 15px 30px 0;}
+.under main .box_list_ovn .item:nth-child(2n+2){margin-right: 0}
+.under main .box_list_ovn .item .img_ovn{height: 260px}
+.under main .box_list_ovn .item .cate_ovn{width: 120px;}
+.under main .box_list_ovn .item .name_ovn{width: calc(100% - 130px);}
+.under main .btn_list {display: flex;margin: 0 auto;flex-direction: column;align-items: center;}
+.under main .btn_list li:not(:last-child) {margin-bottom: 20px;}
+
+.under main .btn .max-h60{height: 60px}
+
+ .diagnosis-wrap{flex-direction: column;padding: 20px;}
+ .diagnosis-side{width: 100%;overflow:auto;margin-bottom: 25px;}
+ .diagnosis-card{width: 100%;padding: 25px 20px;}
+ .side-step{min-width:120px;font-size: 14px;}
+ .note-card{padding:32px 22px}
+ .progress-note{font-size: 16px}
+ .option{gap: 15px;padding: 15px;}
+.under main .result_btn .btn{max-width: 100%;width: 290px}
+ .under main .result_btn .btn a{padding: 0 40px 0 15px;line-height: 1.2em;}
+.q-kicker{width: 40px;height:40px;font-size: 14px}
+
+.under main .u_btn .h_80{height: 80px}
+.under main .ls04{letter-spacing: -0.04em}
+
+.under main .btn a{text-align: center}
+}
+
+
+/* IPHONE 14 */
+@media screen and (max-width: 440px) {
+/*============ ORTHER ============ */
+.under main #top_info::before{width: 100px;right: 15px}
+
+
+.under main .box_list_ovn .item{width:100%;margin: 0 0px 30px 0;}
+.under main .box_list_ovn .item:last-child {margin-bottom: 0;}
+
+.under main .btn .txt-14{font-size: 15px;width: 100%;line-height: 1.3em;}
+
+
+
+}
+
+
+/* IPHONE 6 */
+@media screen and (max-width: 360px) {
+.under main .btn .txt-14{font-size: 14px;}
+
+.under main h3, .under main .ovn_content h3{font-size: 6.5vw}
+.under main h3 .txt, .under main .ovn_content h3 .txt{padding: 0 25px}
+.under main h4, .under main .ovn_content h4{font-size: 5vw;padding: 15px 10px;}
+}

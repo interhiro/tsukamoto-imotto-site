@@ -1,0 +1,271 @@
+
+/*==========================================================
+                        C U S T O M
+==========================================================*/
+.under main .image_l{float:left;margin:6px 100px 0 0}
+.under main .image_r{float:right;margin:6px 0 0 100px}
+.under main .image_l img,.under main .image_r img,.under main .img img{border-radius: 20px}
+.under main .u_content{position: relative;padding:0px 0 82px;margin-bottom: 120px;}
+.under main .u_content::before{position: absolute;content:"";z-index: -1;top: 50%;left: 50%;width: 100vw;min-width: 1260px;transform: translate(-50%,-50%);background: url(../images/bg_h3.png) center /cover no-repeat;height: 100%;}
+.under main .u_content2{padding: 82px 0}
+.under main .u_item_3{margin-top: 30px}
+.under .box_fixed_pc{display: none}
+/* MB */
+.under main .mb10{margin-bottom:10px}
+.under main .mb15{margin-bottom:15px}
+.under main .mb20{margin-bottom:20px}
+.under main .mb25{margin-bottom:25px}
+.under main .mb30{margin-bottom:30px}
+.under main .mb40{margin-bottom:40px}
+.under main .mb50{margin-bottom:50px}
+.under main .mb60{margin-bottom:60px}
+.under main .mb70{margin-bottom:70px}
+.under main .mb80{margin-bottom:80px}
+.under main .mb90{margin-bottom:90px}
+.under main .mb100{margin-bottom:100px}
+.under main .mb120{margin-bottom:120px}
+.under main .mb150{margin-bottom:150px}
+
+/* MT */
+.under main .mt10{margin-top:10px}
+.under main .mt15{margin-top:15px}
+.under main .mt20{margin-top:20px}
+.under main .mt25{margin-top:25px}
+.under main .mt30{margin-top:30px}
+.under main .mt40{margin-top:40px}
+.under main .mt50{margin-top:50px}
+
+/*==========================================================
+                        H E A D I N G
+==========================================================*/
+.under main h2,
+.under main h3,
+.under main h4,
+.under main h5,
+.under main h6,
+.under main .ovn_content h3,
+.under main .ovn_content h4,
+.under main .ovn_content h5,
+.under main .ovn_content h6{font-weight: 900;margin-bottom: 30px;}
+
+.under main h2{font-size: 96px; text-align: center;margin-bottom: 0;}
+
+.under main h3,
+.under main .ovn_content h3{font-size: 48px;text-align: center;line-height: 1.3em;}
+.under main h3 .txt::first-letter,
+.under main .ovn_content h3 .txt::first-letter{color:var(--scolor);}
+.under main h3 .txt,.under main .ovn_content h3 .txt{display: inline-block;padding: 0 72px;position: relative}
+.under main h3 .txt::before,.under main h3 .txt::after,.under main .ovn_content h3 .txt::before,.under main .ovn_content h3 .txt::after{position: absolute;content: "";height: auto;aspect-ratio: 41 / 76;width: 41px;bottom: 0;}
+.under main h3 .txt::before{left: 0;background: url(../images/ic_h3_before.png) center /cover no-repeat}
+.under main h3 .txt::after{right: 0;background: url(../images/ic_h3_after.png) center /cover no-repeat}
+/*.under main .txt-tag3{text-align: center;font-size: 28px;font-weight: bold;line-height: 1.4em;margin-bottom: 50px;}*/
+
+.under main h4,
+.under main .ovn_content h4{font-size: 44px;position: relative;border-radius: 16px;background: var(--scolor);text-align: center;padding: 12px 15px 15px 15px;margin-bottom: 50px;letter-spacing: -0.02em;line-height: 1.3em;}
+.under main h4::first-letter,
+.under main .ovn_content h4::first-letter{color:#fff}
+
+.under main h5,
+.under main .ovn_content h5{font-size: 38px;color: var(--organ);font-weight: bold;border-bottom: 1px solid var(--scolor);padding-bottom: 12px;margin-bottom: 20px;}
+
+.under main h6,
+.under main .ovn_content h6{font-size: 32px;color: var(--organ);font-weight: bold;position: relative;padding-left: 58px;letter-spacing: -0.02em;margin-bottom: 20px;}
+.under main h6::before,.under main .ovn_content h6::before{position: absolute;content:"";left: 0;top: -3px;height: auto;aspect-ratio: 44 / 43;background: url(../images/ic_h6.png) center /cover no-repeat;width: 44px}
+
+/*==========================================================
+                      MAIN - CONTENT
+==========================================================*/
+.under main #content{padding: 0 0 120px}
+.under main section{padding:0 0 120px;margin-bottom:0}
+.under main section:last-child{padding:0}
+
+/* LINK + BUTTON TOP */
+.under main .link{text-decoration: underline;color: var(--mcolor);}
+
+/*============ TOP INFO ============ */
+.under main #top_info{height:400px;width:100%;max-width:1920px;margin:0 auto;background:var(--mcolor);position: relative}
+.under main #top_info::before{position: absolute;content:"";right: 73px;bottom: -1px;aspect-ratio:127 / 123;width: 381px;background: url(../images/u_top_info_before.png) center /cover no-repeat;}
+.under main #top_info .inner{display:flex;flex-direction:column;justify-content:center;align-items:center;width:100%;height:100%}
+
+/*==========================================================
+                    T O P I C   P A T H
+==========================================================*/
+.under main #topic_path{margin-bottom:30px}
+.under main #topic_path ul{display:block;padding:10px 0}
+.under main #topic_path li{display:inline;position: relative;}
+.under main #topic_path li:not(:last-child)::after{content:">";position:relative;display: inline-block;margin: 0 5px 0 10px;top: -1px;pointer-events: none;}
+.under main #topic_path li{color: var(--scolor);}
+
+
+/*============ LIST ANCHOR LINK ============ */
+.under main .list_anchor{display: flex; align-items: center; flex-wrap: wrap; justify-content: center;width:100%;margin-bottom: 30px;}
+.under main .list_anchor .btn{margin: 0 9px 15px}
+.under main .list_anchor:last-child{margin-bottom: -15px;}
+.under main .list_anchor .btn.active a{background-color: var(--scolor);pointer-events: none;}
+.under main .list_anchor_tag3{margin: 49px 0 0 0}
+.under main .list_anchor_ovn{margin: 70px 0 0 0;}
+/*==========================================================
+                        T A B L E
+==========================================================*/
+.under main table.td_top td{vertical-align:top}
+.under main table.tb_fix{table-layout: fixed;}
+.under main table.tb_cen{text-align: center}
+.under main table{margin-bottom: 30px;}
+.under main table.mailform th,
+.under main table th{background: var(--scolor);color:#fff;font-weight:700;font-size: 22px;letter-spacing: 0.05em;}
+.under main table.mailform th span{color:#fff}
+.under main table.mailform td .info{color:var(--mcolor)}
+
+.under main table td{border-color: var(--scolor);background:#fff;}
+.under main table th,
+.under main table td{padding:15px;}
+.under main table img{display:block;margin:auto;}
+
+.under main table th{border-color: var(--scolor);border-right-color: #fff;}
+.under main table tr th:first-child{border-left-color: var(--scolor);}
+.under main table tr th:last-child{border-right-color: var(--mcolor);}
+.under main table.mailform th,
+.under main table.tb_block th{border-color: var(--scolor);border-bottom-color: #fff;}
+.under main table.mailform tr:first-child th,
+.under main table.tb_block tr:first-child th{border-top-color: var(--scolor);}  
+.under main table.mailform tr:last-child th,
+.under main table.tb_block tr:last-child th{border-bottom-color: var(--mcolor);border-bottom: none}
+.under main .tb_scroll table th{border-bottom-color: #fff}
+.under main .tb_scroll table tr:last-child th{border-bottom-color: var(--scolor)}
+.under main table.tb_block tr:last-child th,.under main table.mailform tr:last-child th{border-bottom:1px solid var(--scolor)}
+
+/*============ LIST ============ */
+/* LIST 01 */
+.under main .list01,
+.under main .ovn_content ul{margin-bottom: 30px;}
+.under main .list01 li,
+.under main .ovn_content ul li{display:block;padding-left: 30px;margin-bottom: 14px;position:relative}
+.under main .list01 li::before,
+.under main .ovn_content ul li::before{background:url(../images/ic_list.png) center /cover no-repeat;width:18px;height:auto;position:absolute;top: 7px;left:0;content:'';aspect-ratio: 1/1}
+
+/* TOC */
+.under main .toc_content .ttl{font-size: 30px}
+.under main .list_toc a{display:block;padding-left:25px;margin-bottom:10px;position:relative;text-decoration: underline;text-underline-offset: 3px}
+.under main .list_toc a::before{background:url(../images/ic_list.png) center /cover no-repeat;width:18px;height:auto;position:absolute;top: 7px;left:0;content:'';aspect-ratio: 1/1;content:''}
+
+
+/* LIST 02 */
+.under main .list02,
+.under main .ovn_content ol{margin-bottom: 30px;}
+.under main .list02 li,
+.under main .ovn_content ol li{counter-increment: li;padding-left: 35px;position: relative;margin-bottom: 14px;}
+.under main .list02 li::before,
+.under main .ovn_content ol li::before{content: counter(li);position: absolute;width: 25px;height: 25px;display: flex;justify-content: center;align-items: center;border-radius: 50%;left: 0;top: 4px;background-color: var(--scolor);font-size: 14px;font-weight: bold;color: #FFF;line-height: 1.5em;font-family: var(--font-en);padding: 1px 0px 0 1px;}
+
+/* LIST CHECK */
+.under main .list_check{margin-bottom: 30px;}
+.under main .list_check li{display:block;padding-left:25px;margin-bottom: 14px;position:relative}
+.under main .list_check li::before{content: '';display: block;position: absolute;top: 5px;left: 5px;width: 8px;height: 18px;border: solid var(--scolor);border-width: 0 2px 2px 0;transform: rotate(45deg);}
+
+/* LIST FAQ */
+.under main .list_faq{margin-bottom: 30px;}
+.under main .list_faq dl{background: #FFF;margin-bottom: 50px;border: 1px solid var(--scolor);}
+.under main .list_faq dt{position: relative;font-size: 20px;font-weight: bold;line-height: 1.5em;display: flex;align-items: center;display: flex;align-items: center;padding: 15px 50px 15px 15px;cursor: pointer;}
+.under main .list_faq dt .txt{width: 40px;height: 40px;line-height: 1em;background: #fff;border: 1px solid var(--scolor);color: var(--scolor);margin-right: 15px;display: flex;align-items: center;justify-content: center;text-align: center;flex-shrink: 0;font-family: var(--font-en);font-weight: bold;}
+.under main .list_faq dd{position: relative;padding-left: 50px;display: none;padding: 15px 15px 15px 73px;}
+.under main .list_faq dd .txt{position: absolute;top: 5px;left: 15px;width: 40px;height: 40px;font-weight: bold;line-height: 1em;color:#fff;background: var(--scolor);display: flex;align-items: center;justify-content: center;text-align: center;font-family: var(--font-en);}
+.ic_plus{position: absolute;right: 40px;}
+.ic_plus::before,.ic_plus::after{top: calc(50% - 1px);width: 20px;height: 2px;background:var(--scolor);position: absolute;content:"";transition: 0.3s all ease;}
+.ic_plus::after{transform: rotate(90deg);}
+.under main .list_faq dl.active .ic_plus::after{transform: rotate(0deg);}
+
+/* LIST STEP */
+.under main .list_step dl{margin-bottom: 35px;padding-bottom: 50px;position: relative;}
+.under main .list_step dl:not(:last-child)::before{background: url('../images/ic-step.png') center /cover no-repeat;width: 80px;height: auto;position: absolute;bottom: -10px;left: calc(50% - 40px);content: '';aspect-ratio: 8 / 3;}
+.under main .list_step dl:last-child{padding-bottom: 0;margin-bottom: 0}
+.under main .list_step dt{background: var(--scolor);color: #fff;font-weight: 700;padding: 10px;font-size: 22px;}
+.under main .list_step dd{padding: 15px;background: #fff;border: 1px solid var(--scolor);}
+
+/*============ FRAME ============ */
+/* FRAME 01 */
+.under main .frame01{border: 3px solid var(--scolor);padding: 30px;border-radius:10px;margin-bottom: 50px;}
+
+/* IFRAME BOX */
+.under main .box_map{width:100%;height:400px}
+.under main .box_ytb{width: 900px;height: auto; margin: 0 auto;aspect-ratio: 16/9;max-width: 100%;}
+.under main .box_map iframe,
+.under main .box_ytb iframe{width:100%;height:100%;border:none;outline: none;}
+
+/* ===========  OVERNOTE ===========  */
+.under main .box_list_ovn{display: flex;flex-wrap: wrap;width: 100%;position: relative;margin: 70px 0 0 0;}
+.under main .box_list_ovn .item{width: calc((100% - 110px) / 3);margin: 0 55px 55px 0;position: relative;transition: 0.3s all ease;}
+.under main .box_list_ovn .item .img_ovn{display: flex;align-items: center;justify-content: center;height: 300px;background: #fff;margin-bottom: 16px;}
+.under main .box_list_ovn .item .img_ovn img{width: 100%;height: 100%;max-height: 100%;object-fit: cover;}
+.under main .box_list_ovn .item .info_ovn{display: flex;justify-content: space-between;}
+.under main .box_list_ovn .item .cate_ovn{margin: 0 10px 0 0;line-height: 1.5em;letter-spacing: -0.01em;width: 140px;text-align: center;}
+.under main .box_list_ovn .item .cate_ovn .txt{padding: 3px 15px;background: var(--scolor);color:#fff;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 1;display: -webkit-box;-webkit-box-orient: vertical;}
+.under main .box_list_ovn .item .name_ovn{margin-bottom: 0;line-height: 1.5em;font-weight: bold;width: calc(100% - 150px);}
+.under main .box_list_ovn .item .name_ovn .txt{overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 1;display: -webkit-box;-webkit-box-orient: vertical;}
+.under main .ovn_content p a {text-decoration: underline;color: var(--organ);}
+.under main .ovn_content img {max-height: 500px;border-radius: 20px}
+
+.under main .btn_list .is_prev a {background: url('../images/ic-left.png') no-repeat left 25px center /39px var(--organ);}
+.under main .btn_list .is_none a {background: var(--organ);}
+
+/* ===========  PAGINATION OVN ===========  */
+.under main .pagination {display: flex;justify-content: center;flex-wrap: wrap;text-align: center;margin: 30px auto 0}
+.under main .pagination li {margin: 0 10px}
+.under main .pagination li a {width: 40px;height: 40px;text-align: center;border: 1px solid var(--mcolor);background: #fff;display: flex;color: var(--mcolor);justify-content: center;align-items: center;border-radius: 5px;}
+.under main .pagination li:hover a, .under main .pagination li.active a {
+background: var(--mcolor);color: #fff;}
+.under main .pagination li.active a {pointer-events: none;}
+.under main .pagination li.disabled {display: none}
+
+
+.under main .list_item{display: flex;justify-content: space-between;flex-wrap: wrap;}
+.under main .list_item .item{width: calc((100% - 48px) / 3);background: var(--scolor);border-radius:26px;padding: 12px;overflow: hidden;position: relative;}
+.under main .list_item .item::before{width: calc(100% - 24px);left: 12px;top: 12px;height: calc(100% - 24px);border: 3px solid #fff;border-radius: 26px;position: absolute;content:""}
+.under main .list_item .item .img{text-align: center;margin-bottom: 15px}
+.under main .list_item .item .img img{border-radius: 26px 26px 0 0;overflow: hidden}
+.under main .list_item .item h5{color:#fff;text-align: center;border-bottom: none;font-size: 38px;margin-bottom: 14px;padding-bottom: 0;}
+.under main .list_item .item .info{padding: 0 32px 43px 32px}
+.under main .list_item .item .desc,.under main .u_item6 .desc{font-size: 18px;font-weight: 400;line-height: 1.55em;}
+
+.under main .u_box_6{padding: 121px 0;position: relative;}
+.under main .u_box_6::before{position: absolute;content:"";left: 50%;top: 50%;transform: translate(-50%,-50%);background: #f9f1cf;min-width: 1260px;width: 100vw;height: 100%;z-index: -1}
+.under main .box_item{padding: 13px;background: #fff;border-radius: 40px;margin-bottom: 22px;}
+.under main .box_item .ct_box_item{border-radius: 30px;border: 5px solid var(--scolor);padding: 25px}
+
+
+.diagnosis-wrap{display: flex;margin:0 auto;background: rgb(255 164 47 / 60%);padding:30px;border-radius:22px;justify-content: space-between;}
+.diagnosis-side{background:#fff0df;border-radius:18px;padding:22px 18px;width: 300px;}
+.side-title{font-weight:700;margin-bottom:10px;font-size: 18px;}
+.side-step{display:flex;align-items:center;gap:10px;background:#fff;border-radius:10px;padding:9px 10px;color: var(--organ);font-size: 17px;border:1px solid #fae1c9;font-family: var(--font-main);font-weight: bold;letter-spacing: 0;margin-bottom: 10px;}
+.side-step.active{background: var(--scolor);color:#fff;border-color: var(--scolor);}
+.diagnosis-card{background:#fff;border:3px solid var(--orange);border-radius:20px;padding:30px 32px;min-height: 370px;display:flex;flex-direction:column;justify-content:center;width: calc(100% - 330px);}
+.q-kicker{display:inline-grid;place-items:center;width: 50px;height: 50px;border-radius:50%;background: var(--scolor);color: #fff;border: 1px solid var(--scolor);margin-bottom: 10px;font-size: 18px;font-family: var(--font-main);font-weight: bold;}
+.under main .question{font-size:38px;font-weight:bold;margin:0 0 20px;color:var(--organ);border-bottom: 1px solid var(--scolor);text-align: left;background: none;border-radius: 0;padding: 0px  0px 15px 0px;}
+.q-help{font-weight:700;color:#71675f;margin:0 0 22px;font-size:14px}
+.under main .question::first-letter{color:var(--organ);}
+.option{width:100%;border:2px solid #ffd1a7;background:#fffaf5;border-radius:12px;margin:10px 0;padding:16px 18px;text-align:left;font-weight:800;color:#4c382b;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;transition:.2s;font-family: var(--font-main);}
+.option:hover{border-color: var(--organ);background:#fff1e1;transform:translateY(-1px)}
+.option span{color: var(--organ);white-space:nowrap}
+.progress-note{text-align:center;color: var(--organ);font-weight:900;margin-top:16px;font-size: 18px;}
+.result{display:none}
+.result p{margin:0 0 16px}
+.under main .result_btn {display: flex;flex-wrap: wrap;justify-content: center;gap: 12px;margin-top: 20px;align-items: center;}
+.under main .result_btn .btn{margin: 0}
+.under main .result_btn .btn a{cursor: pointer; max-width: 100%;width: auto;line-height: 1.5em;padding: 0 80px 0 30px;}
+
+/* RESET */
+.under main table:last-child,
+.under main .list_faq:last-child,
+.under main .list_faq dl:last-child,
+.under main .list01:last-child,
+.under main .list01 li:last-child,
+.under main .list02:last-child,
+.under main .list02 li:last-child,
+.under main .list_check:last-child,
+.under main .list_check li:last-child,
+.under main .list_step:last-child,
+.under main .list_step dl:last-child,
+.under main section p:last-child,
+.under main p:last-child,
+.under main .frame01:last-child,
+.under main .frame_pick:last-child,
+.under main .box_item:last-child{margin-bottom: 0}

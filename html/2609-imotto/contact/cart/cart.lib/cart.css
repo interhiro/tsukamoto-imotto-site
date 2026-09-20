@@ -1,0 +1,589 @@
+﻿@charset "UTF-8";
+
+/*---------------------------------------------------------------*/
+/*
+/*  Input Page - Cart Icon Image
+/*
+/*---------------------------------------------------------------*/
+div#cart_icon {
+	position: fixed;
+	top: 0;
+	right: 0;
+	overflow: hidden;
+	width: 70px;
+	height: 70px;
+	background: #0188CC;
+	border: 1px solid #FFFFFF;
+	border-width: 0 0 1px 1px;
+}
+div#cart_icon:hover {
+	background-position: -70px 0;
+	background: #FE5C0B;
+	color: #FFFFFF;
+}
+
+div#cart_icon a {
+	display: inline-block;
+	padding: 0;
+	width: 70px;
+	height: 70px;
+	background: url(); /* To disable the specified background image of the "a" tag on any page. */
+	line-height: 100%;
+	text-align: center;
+	text-decoration: none;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+div#cart_icon a img {	border: 0;}
+div#cart_icon a img:hover {
+	position: relative;
+	top: 0;
+	left: -70px;
+}
+
+
+
+
+/*---------------------------------------------------------------*/
+/*
+/*  Input Page - Formtags
+/*
+/*---------------------------------------------------------------*/
+/* PC向け */
+form.cart_sender input.form_submit {
+	width: 150px;
+	height: 24px;
+	background: url(../images/cart_sender.gif) no-repeat;
+	border: 0;
+}
+form.cart_sender input.form_submit:hover {
+	background-position: 0 -24px;
+}
+
+/* スマフォ向け */
+form.cart_sender input.form_submit_sp {
+	width: 310px;
+	height: 44px;
+	background: url(../images/cart_sender_off.gif) no-repeat;
+	border: 0;
+}
+form.cart_sender input.form_submit_sp:hover {
+	background: url(../images/cart_sender_on.gif) no-repeat;
+}
+
+/* Loading image */
+form.cart_sender {
+	position: relative;
+}
+div.loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: none;
+	padding: 5px;
+	background: #EEFFAA;
+	border: 1px solid #aaaaaa;
+}
+
+
+/*---------------------------------------------------------------*/
+/*
+/*  Cart Page - Layout
+/*
+/*---------------------------------------------------------------*/
+/* Body */
+body#cart_total {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Header */
+#cart_total div#header {
+	margin: 0;
+	padding: 5px 0;
+	background: #0088CC;
+}
+#cart_total div#header h1 {
+	margin: 0;
+	padding: 5px;
+	background: url(../images/cart_logo.jpg) no-repeat;
+	background-position: 15px 2px;
+	text-indent: 70px;
+	color: #FFFFFF;
+}
+
+/* Main */
+#cart_total div#main {
+	margin-bottom: 50px;
+}
+
+
+/* Content */
+#cart_total div#content {
+}
+
+
+/* Footer */
+#cart_total div#footer {
+	position: fixed;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #0088CC;
+	color: #FFFFFF;
+}
+#cart_total div#footer p {
+	margin: 5px;
+	padding: 0;
+	text-align: right;
+}
+
+
+
+
+/*---------------------------------------------------------------*/
+/*
+/*  Cart Confirm Page - Formtags
+/*
+/*---------------------------------------------------------------*/
+p.window_close {
+	margin: 0 auto;
+	width: 900px;
+	text-align: right;
+}
+
+p.window_close_sp {
+	margin: 0;
+	width: 100%;
+	text-align: center;
+}
+
+
+
+
+/*---------------------------------------------------------------*/
+/*
+/*  Cart Page - Formtags
+/*
+/*---------------------------------------------------------------*/
+/* PC向け */
+h2.cart_total {
+	margin: 20px auto 0 auto;
+	width: 900px;
+}
+form.cart_total {
+	margin: 10px auto 0 auto;
+	padding: 0;
+	width: 900px;
+}
+form.cart_total fieldset {
+	margin: 0;
+	padding: 0;
+	width: 900px;
+	border: 0;
+}
+
+/* スマフォ向け */
+h2.cart_total_sp {
+	margin: 20px auto 0 auto;
+	width: auto;
+}
+form.cart_total_sp {
+	margin: 10px auto 0 auto;
+	padding: 0;
+	width: auto;
+}
+form.cart_total_sp fieldset {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	border: 0;
+}
+
+
+/* Table Setting */
+form.cart_total table,
+form.cart_total table th,
+form.cart_total table td {
+	border-collapse: collapse;
+	border: 1px solid #E6E6EE;
+	border-width: 0;
+	font-size: 14px;
+}
+form.cart_total table th,
+form.cart_total table td {
+	border-width: 0 0 1px 0;
+	vertical-align: middle;
+}
+form.cart_total table {
+	width: 900px;
+}
+form.cart_total table th {
+	padding: 5px 0;
+	background: #0088CC;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+form.cart_total table td {
+	padding: 5px;
+	vertical-align: middle;
+}
+
+/* SmartPhone DL Setting */
+form.cart_total_sp dt,
+form.cart_total_sp dd {
+	font-size: 16px;
+}
+form.cart_total_sp dl dt,
+form.cart_total_sp dl dd {
+	border-width: 0 0 1px 0;
+}
+form.cart_total_sp dl {
+	width: auto;
+}
+form.cart_total_sp dl dt {
+	margin: 0;
+	padding: 5px;
+	background: #0088CC;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+form.cart_total_sp dl dd {
+	margin: 0 0 20px 0;
+	padding: 5px;
+}
+form.cart_total_sp dl dd.t_delete {
+	margin-bottom: 50px;
+	border: 1px solid #999999;
+	border-width: 0 0 1px 0;
+	text-align: center;
+}
+/* carriage */
+/* PC向け */
+form.cart_total table.carriage {
+	margin: 20px 0 20px auto;
+	width: 400px;
+	text-align: center;
+}
+form.cart_total table.carriage th.postal {
+	padding: 5px;
+}
+
+form.cart_total table.carriage p.carriage_comment {
+	margin: 10px 0 0 0;
+	color: #FF0000;
+}
+
+/* スマフォ向け */
+form.cart_total_sp p.carriage {	text-align: center;}
+form.cart_total_sp p.carriage span {
+	display: block;
+	margin: 0;
+	padding: 5px;
+	background: #0088CC;
+	text-align: left;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+form.cart_total_sp p.carriage select {
+	margin: 5px auto 20px auto;
+	padding: 10px 0;
+	width: 80%;
+	height: 40px;
+	font-size: 16px;
+}
+form.cart_total_sp p.carriage p.carriage_comment {
+	margin: 10px 0 0 0;
+	color: #FF0000;
+}
+
+
+/* Table Tx Setting */
+form.cart_total table .t_code {	width: 100px;}
+form.cart_total table .t_name {	width: 250px;}
+form.cart_total table .t_detail {	width: 150px;}
+form.cart_total table .t_price {	width: 80px;}
+form.cart_total table td.t_price {	text-align: right;}
+form.cart_total table .t_num {	width: 70px;	text-align: center;}
+form.cart_total table td.t_num input {	width: 40px;	text-align: right;}
+form.cart_total table .t_delete {	width: 100px;	text-align: center;}
+
+
+/* Item Delete Button
+------------------------------------------------ */
+/* PC向け */
+form.cart_total table td.t_delete a {
+	display: inline-block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 70px;
+	height: 24px;
+}
+form.cart_total table td.t_delete a img {	border: 0;}
+form.cart_total table td.t_delete a img:hover { margin-top: -24px;}
+
+/* スマフォ向け */
+form.cart_total_sp dl dd.t_delete a {
+	display: inline-block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 310px;
+	height: 44px;
+}
+form.cart_total_sp dl dd.t_delete a img {	border: 0;}
+
+
+/* Submit Button
+------------------------------------------------ */
+/* PC向け */
+form.cart_total p.submit {
+	margin: 10px 0 2px 0 0;
+	width: auto;
+	text-align: right;
+}
+form.cart_total input.submit {
+	width: 310px;
+	height: 44px;
+	background: url(../images/cart_total_off.gif) no-repeat;
+	border: 0;
+}
+form.cart_total input.submit:hover {
+	background: url(../images/cart_total_on.gif) no-repeat;
+}
+
+/* スマフォ向け */
+form.cart_total_sp p.submit {
+	margin: 0 0 20px 0;
+	width: auto;
+	text-align: center;
+}
+form.cart_total_sp input.submit {
+	width: 310px;
+	height: 44px;
+	background: url(../images/cart_total_sp.gif) no-repeat;
+	border: 0;
+}
+
+
+
+/*---------------------------------------------------------------*/
+/*
+/*  Cart Confirm Page - Display
+/*
+/*---------------------------------------------------------------*/
+/* PC向け */
+h2.cart_confirm {
+	margin: 10px auto 0 auto;
+	width: 900px;
+}
+
+/* スマフォ向け */
+h2.cart_confirm_sp {
+	margin: 10px auto 0 auto;
+	width: auto;
+}
+
+
+/* PC向け Table Setting */
+table.cart_confirm,
+table.cart_confirm th,
+table.cart_confirm td,
+table.total,
+table.total td,
+table.total_carriage,
+table.total_carriage td {
+	border-collapse: collapse;
+	border: 1px solid #E6E6EE;
+	font-size: 14px;
+	
+}
+table.cart_confirm th,
+table.cart_confirm td,
+table.total td,
+table.total_carriage td {
+	border-width: 0 0 1px 0;
+	vertical-align: middle;
+}
+table.cart_confirm {
+	margin: 10px auto 0 auto;
+	width: 900px;
+}
+table.total,
+table.total_carriage {
+	margin: 1px auto 0 auto;
+	width: 900px;
+	height: 40px;
+}
+table.cart_confirm th {
+	padding: 5px 0;
+	background: #0088CC;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+table.cart_confirm td,
+table.total td,
+table.total_carriage td {
+	padding: 5px;
+	vertical-align: middle;
+}
+table.total td,
+table.total_carriage td {
+	text-align: right;
+}
+
+/* スマフォ向け DL Setting */
+dl.cart_confirm_sp,
+dl.cart_confirm_sp dt,
+dl.cart_confirm_sp dd,
+p.total_sp,
+p.total_carriage_sp {
+	border-collapse: collapse;
+	border: 1px solid #E6E6EE;
+	font-size: 14px;
+	
+}
+dl.cart_confirm_sp dt,
+dl.cart_confirm_sp dd,
+p.total_sp,
+p.total_carriage_sp {
+	border-width: 0 0 1px 0;
+	vertical-align: middle;
+}
+dl.cart_confirm_sp {
+	margin: 10px auto 0 auto;
+	width: auto;
+}
+dl.cart_confirm_sp dt {
+	padding: 5px 0;
+	background: #0088CC;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+dl.cart_confirm_sp dd {
+	margin: 0 0 20px 0;
+	padding: 5px;
+	border: 0;
+}
+dl.cart_confirm_sp dt.t_subtotal {	background: #CC9900;}
+dl.cart_confirm_sp dd.t_subtotal {
+	margin-bottom: 50px;
+	border: 1px solid #CCCCCC;
+	border-width: 0 0 1px 0;
+}
+dl.cart_confirm_sp dt,
+p.total_sp.
+p.total_carriage_sp {
+	padding: 5px;
+	vertical-align: middle;
+}
+p.total_sp {
+	padding: 20px 0;
+	background: #FF9900;
+	text-align: left;
+	font-weight: bold;
+	font-size: 20px;
+}
+p.total_carriage_sp {
+	padding: 20px 0;
+	background: #FFCC00;
+	text-align: left;
+	font-size: 20px;
+}
+p.total_sp span.disp_price,
+p.total_carriage_sp span.disp_price {
+	display: block;
+	margin: 0;
+	text-align: right;
+}
+
+
+/* Table Tx Setting */
+table.cart_confirm .t_code {	width: 100px;}
+table.cart_confirm .t_name {	width: 250px;}
+table.cart_confirm .t_detail {	width: 150px;}
+table.cart_confirm .t_price {	width: 80px;}
+table.cart_confirm td.t_price {	text-align: right;}
+table.cart_confirm .t_num {	width: 70px;	text-align: center;}
+table.cart_confirm .t_subtotal {	width: 100px;}
+table.cart_confirm td.t_subtotal {	text-align: right;}
+
+
+
+/*---------------------------------------------------------------*/
+/*
+/*  Cart Confirm Page - Formtags
+/*
+/*---------------------------------------------------------------*/
+/* PC向け */
+form.cart_confirm {
+	margin: 10px auto 0 auto;
+	padding: 0;
+	width: 900px;
+}
+form.cart_confirm fieldset {
+	margin: 0;
+	padding: 0;
+	width: 900px;
+	border: 0;
+}
+
+form.cart_confirm textarea {
+	display: none;
+}
+
+/* スマフォ向け */
+form.cart_confirm_sp {
+	margin: 10px auto 0 auto;
+	padding: 0;
+	width: auto;
+}
+form.cart_confirm_sp fieldset {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	border: 0;
+}
+
+form.cart_confirm_sp textarea {
+	display: none;
+}
+
+
+/* Submit Button */
+/* PC向け */
+form.cart_confirm p.submit {
+	margin: 0;
+	padding: 0;
+	width: 900px;
+	text-align: right;
+}
+form.cart_confirm input.submit {
+	margin: 0 0 20px 0;
+	width: 310px;
+	height: 44px;
+	background: url(../images/cart_confirm_off.gif) no-repeat;
+	border: 0;
+}
+form.cart_confirm input.submit:hover {
+	background: url(../images/cart_confirm_on.gif) no-repeat;
+}
+
+/* スマフォ向け */
+form.cart_confirm_sp p.submit {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	text-align: center;
+}
+form.cart_confirm_sp input.submit {
+	width: 310px;
+	height: 44px;
+	margin: 20px 0 20px 0;
+	background: url(../images/cart_confirm_sp.gif) no-repeat;
+	border: 0;
+}

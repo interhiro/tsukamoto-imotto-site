@@ -1,0 +1,7 @@
+contact/index.cgi	758行目	自動返信管理者宛送信の間	0001	2026-08-17 16:43:36	1786936890vahbZpoIRQ	0001	戸建て	その他	〒960-8253 その他	〒	960-8253	 	物件所在地1	Nhan Nguyen Hoang	hoangnhanit.nina@gmail.com	0389212500	相続した不動産について相談したい<br />空き家・空き地について相談したい<br />今が売り時だと考えている<br />住み替えを考えている（新居は決定済み）	その他のご事情・ご質問		::1	Mozilla/5.0 (Linux; Android 15; Pixel 9) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36	http://localhost:8080/newcoding/thang8_2026/1001014912001-01/send/contact/index.cgi?mode=confirm
+contact/index.cgi	1273行目	追書込正常保存	0001
+contact/index.cgi	758行目	自動返信管理者宛送信の間	0002	2026-08-18 13:12:50	1787018205JfxepAPAmg	0002	戸建て	神奈川県	〒960-8253 神奈川県	〒	960-8253	 	物件所在地	Nhan Nguyen Hoang	hoangnhanit.nina@gmail.com	0389212500	相続した不動産について相談したい<br />空き巣・火災・騒音・災害などが心配	その他のご事情・ご質問		::1	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36	http://localhost:8080/newcoding/thang8_2026/1001014912001-01/send/contact/index.cgi?mode=confirm
+contact/index.cgi	1273行目	追書込正常保存	0002
+/index.cgi	757行目	自動返信管理者宛送信の間	0003	2026-08-21 17:38:58	1787300325bgtTZtkpUI	0003	戸建て	神奈川県	〒960-8253 神奈川県福島市泉	〒	960-8253	 	福島市泉	お名前	hoangnhanit.nina@gmail.com	0389212500	相続した不動産について相談したい	ds		183.80.39.81	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36	https://fvn-office.net/dev/vietry/NhanNH/1001014912001-01/contact/index.cgi?mode=confirm
+/index.cgi	1235行目	本番ファイル破損の復旧	0003
+/index.cgi	1272行目	追書込正常保存	0003
